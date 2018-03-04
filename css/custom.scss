@@ -1,0 +1,48 @@
+.reveal {
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .shadowed {
+    -webkit-box-shadow: 6px 7px 17px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 17px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 7px 17px -5px rgba(0, 0, 0, 0.75);
+  }
+
+  code {
+    padding: 20px !important;
+    max-height: 1500px !important;
+  }
+
+  code span.fragment.fade-out.visible {
+    display: none;
+  }
+
+  section {
+    img {
+      border: none;
+      background: none;
+      box-shadow: none;
+      margin: 0;
+    }
+  }
+
+  img.small-logo {
+    width: 50px;
+    padding-right: 5px;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .block {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  img.block {
+    margin-right: -5px;
+  }
+}
