@@ -1,0 +1,31 @@
+.reveal code span.fragment.fade-out.visible {
+  display: none; }
+
+.reveal section img {
+  border: none;
+  background: none;
+  box-shadow: none;
+  margin: 0; }
+
+.reveal .type-writer {
+  font-family: TrixieCyr-Plain, serif; }
+
+.reveal .about {
+  width: 60%;
+  height: 100%;
+  padding-top: 20px;
+  font-size: 1.3em; }
+  .reveal .about .about-img {
+    text-align: center;
+    padding-bottom: 50px; }
+    .reveal .about .about-img img {
+      width: 200px;
+      border-radius: 2px;
+      box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.5); }
+  .reveal .about .about-text {
+    padding-left: 100px;
+    width: 85%; }
+    .reveal .about .about-text ul {
+      list-style-type: none; }
+      .reveal .about .about-text ul li {
+        padding-bottom: 20px; }
