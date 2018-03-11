@@ -3,6 +3,11 @@
     display: none;
   }
 
+  .progress, .controls {
+    background: rgba(0, 0, 0, 0.2);
+    color: #5a4a42;
+  }
+
   section {
     img {
       border: none;
@@ -31,17 +36,40 @@
        padding-bottom: 50px;
      }
      .about-text {
+       color: black;
        padding-left: 100px;
        width: 85%;
        ul {
          list-style-type: none;
          li {
-           padding-bottom: 20px;
+           background: none;
          }
        }
      }
    }
 
+  h1, h2, h3, h4, & {
+    font-family: papaya_sunriseregular, serif;
+    color: #5a4a42;
+  }
 
+  h1 {
+    font-size: 2em;
+    line-height: 1.7em;
+  }
+
+  h1, h2, h3, h4{
+    padding-bottom: 50px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    padding-bottom: 30px;
+    background: url('../img/bullet.png') no-repeat 0 30%;
+    padding-left: 60px;
+  }
 
 }

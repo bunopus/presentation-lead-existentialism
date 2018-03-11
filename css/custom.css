@@ -1,6 +1,10 @@
 .reveal code span.fragment.fade-out.visible {
   display: none; }
 
+.reveal .progress, .reveal .controls {
+  background: rgba(0, 0, 0, 0.2);
+  color: #5a4a42; }
+
 .reveal section img {
   border: none;
   background: none;
@@ -23,9 +27,29 @@
       border-radius: 2px;
       box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.5); }
   .reveal .about .about-text {
+    color: black;
     padding-left: 100px;
     width: 85%; }
     .reveal .about .about-text ul {
       list-style-type: none; }
       .reveal .about .about-text ul li {
-        padding-bottom: 20px; }
+        background: none; }
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal {
+  font-family: papaya_sunriseregular, serif;
+  color: #5a4a42; }
+
+.reveal h1 {
+  font-size: 2em;
+  line-height: 1.7em; }
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  padding-bottom: 50px; }
+
+.reveal ul {
+  list-style-type: none; }
+
+.reveal li {
+  padding-bottom: 30px;
+  background: url("../img/bullet.png") no-repeat 0 30%;
+  padding-left: 60px; }
