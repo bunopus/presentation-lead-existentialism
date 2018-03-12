@@ -14,26 +14,26 @@
 .reveal .type-writer {
   font-family: TrixieCyr-Plain, serif; }
 
-.reveal .about {
-  width: 60%;
-  height: 100%;
-  padding-top: 20px;
-  font-size: 1.3em; }
-  .reveal .about .about-img {
-    text-align: center;
-    padding-bottom: 50px; }
-    .reveal .about .about-img img {
-      width: 200px;
-      border-radius: 2px;
-      box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.5); }
-  .reveal .about .about-text {
-    color: black;
-    padding-left: 100px;
-    width: 85%; }
-    .reveal .about .about-text ul {
-      list-style-type: none; }
-      .reveal .about .about-text ul li {
-        background: none; }
+.reveal .about .about-img {
+  text-align: left;
+  padding-bottom: 50px; }
+  .reveal .about .about-img img {
+    width: 200px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.5); }
+
+.reveal .about .about-text {
+  color: black;
+  text-align: left; }
+  .reveal .about .about-text img {
+    height: 60px; }
+  .reveal .about .about-text ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .reveal .about .about-text ul li {
+      background: none;
+      padding-left: 0; }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal {
   font-family: papaya_sunriseregular, serif;

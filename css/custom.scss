@@ -22,12 +22,8 @@
   }
 
    .about {
-     width: 60%;
-     height: 100%;
-     padding-top: 20px;
-     font-size: 1.3em;
      .about-img {
-       text-align: center;
+       text-align: left;
        img {
          width: 200px;
          border-radius: 2px;
@@ -37,12 +33,17 @@
      }
      .about-text {
        color: black;
-       padding-left: 100px;
-       width: 85%;
+       text-align: left;
+       img {
+         height: 60px;
+       }
        ul {
          list-style-type: none;
+         margin: 0;
+         padding: 0;
          li {
            background: none;
+           padding-left: 0;
          }
        }
      }
