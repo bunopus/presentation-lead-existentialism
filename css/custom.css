@@ -53,3 +53,26 @@
   padding-bottom: 30px;
   background: url("../img/bullet.png") no-repeat 0 30%;
   padding-left: 60px; }
+
+.reveal .section-head h4 {
+  padding: 0; }
+
+.reveal .section-head p {
+  font-size: 0.6em; }
+
+@-webkit-keyframes blur {
+  to {
+    -webkit-filter: blur(5px);
+    filter: blur(5px); } }
+
+#spagetti-monster, #spagetti-highlight {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 900px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }

@@ -73,4 +73,28 @@
     padding-left: 60px;
   }
 
+  .section-head {
+    h4 {padding: 0;}
+    p {
+      font-size: 0.6em;
+    }
+  }
+}
+@-webkit-keyframes blur {
+  to {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+#spagetti-monster, #spagetti-highlight {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 900px;
+  animation-duration: 2s
 }

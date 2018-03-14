@@ -65,7 +65,8 @@
 						</ul>
 					</section>
 					<section>
-						<h4>Как стать тимлидом</h4>
+						<div class="section-head"><h4>Как стать тимлидом</h4>
+						<p>Взгляд девелопера</p></div>
 						<div style="position:relative;">
 							<div class="fragment" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
 								<img src="img/evolution/1-junior.png">
@@ -83,6 +84,12 @@
 						<aside class="notes">
 							Почему тут всего четыре? Тимлид конечно уже Гомо Эректус, но не венец эволюции
 						</aside>
+					</section>
+					<section>
+						<div class="section-head"><h4>Как стать тимлидом</h4>
+						<p>Взгляд бизнеса</p></div>
+						<img src="img/evolution-business.png" height="550" id="evolution-business">
+						<span class="fragment" data-spagetti-monster></span>
 					</section>
 				</section>
 
@@ -104,40 +111,67 @@
 			</div>
 		</div>
 
+		<img id="spagetti-monster" src="img/spagetti_monster.png" style="z-index: 100;">
+		<img id="spagetti-highlight" src="img/spagetti_monster_highlight.png" style="z-index: 99; animation-delay: 500ms;">
+
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-      Reveal.initialize({
-          history: true,
-          dependencies: [
-              {src: 'plugin/markdown/marked.js'},
-              {src: 'plugin/markdown/markdown.js'},
-              {src: 'plugin/notes/notes.js', async: true},
-              {src: 'plugin/highlight/highlight.js', async: true, callback: waitForHLJS},
-              {src: 'bower_components/jquery/dist/jquery.min.js'},
-              {src: 'js/animations.js'},
-              {src: 'plugin/alt-arrows/alt-arrows.js', async: true},
-              {src: 'plugin/blur-background/blur-background.js'},
-              {src: 'plugin/loader-splashscreen/loader-splashscreen.js'}
-          ],
-          keyboard: {
-              39: 'next',
-              37: 'prev'
-          }
-      });
-
-            function waitForHLJS() {
-                if(window.hljs) {
-                    hljs.initHighlightingOnLoad();
-                    return;
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            history: true,
+            dependencies: [
+                {src: 'plugin/markdown/marked.js'},
+                {src: 'plugin/markdown/markdown.js'},
+                {src: 'plugin/notes/notes.js', async: true},
+                {src: 'plugin/highlight/highlight.js', async: true, callback: waitForHLJS},
+                {src: 'bower_components/jquery/dist/jquery.min.js'},
+                {src: 'js/animations.js'},
+                {src: 'plugin/alt-arrows/alt-arrows.js', async: true},
+                {src: 'plugin/blur-background/blur-background.js'},
+                {src: 'plugin/loader-splashscreen/loader-splashscreen.js'},
+                {src: 'plugin/script-runner/script-runner.js'}
+            ],
+            keyboard: {
+                39: 'next',
+                37: 'prev'
+            },
+            script_runner: {
+                'data-spagetti-monster': {
+                    'fragmentshown': function () {
+                        $("#spagetti-monster").show().addClass('animated zoomIn');
+                        $("#spagetti-highlight").show().addClass('animated zoomIn');
+                        $("#evolution-business").css('-webkit-animation', 'blur 2s linear forwards')
+                    },
+                    'fragmenthidden': function () {
+                        cleanupEffects();
+                    },
+                    'slidechanged': function () {
+                        cleanupEffects();
+                    }
                 }
-                console.log('Waiting for hljs');
-                setTimeout(waitForHLJS, 1000);
             }
+        });
+        function cleanupEffects() {
+            $("#spagetti-monster").hide();
+            $("#spagetti-highlight").hide();
+            $("#evolution-business").removeAttr('style');
+        }
+        Reveal.addEventListener('slidechanged', function () {
+            cleanupEffects();
+        });
+
+        function waitForHLJS() {
+            if (window.hljs) {
+                hljs.initHighlightingOnLoad();
+                return;
+            }
+            console.log('Waiting for hljs');
+            setTimeout(waitForHLJS, 1000);
+        }
 		</script>
 	</body>
 </html>
