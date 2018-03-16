@@ -43,6 +43,10 @@
   font-size: 2em;
   line-height: 1.7em; }
 
+.reveal h3 {
+  font-size: 1.3em;
+  line-height: 1.7em; }
+
 .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
   padding-bottom: 50px; }
 
@@ -59,6 +63,39 @@
 
 .reveal .section-head p {
   font-size: 0.6em; }
+
+.reveal .fallback-font {
+  font-family: "Montserrat", Impact, sans-serif;
+  vertical-align: bottom; }
+
+.reveal div.advice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle; }
+  .reveal div.advice div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-size: 900px 531px;
+    width: 900px;
+    height: 531px;
+    background-image: url("../img/advice.png");
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .reveal div.advice div > * {
+      padding: 30px 0 0 0;
+      margin: 0; }
 
 @-webkit-keyframes blur {
   to {
