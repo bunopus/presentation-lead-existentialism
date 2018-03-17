@@ -113,3 +113,198 @@
   height: 900px;
   -webkit-animation-duration: 2s;
           animation-duration: 2s; }
+
+#drippings {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1000; }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
+
+.text {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-family: papaya_sunriseregular, serif;
+  font-size: 8em;
+  font-weight: 900;
+  opacity: 0;
+  -webkit-animation: fadein 1.5s forwards;
+          animation: fadein 1.5s forwards;
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s; }
+
+.liquid {
+  width: 120%;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: -10%;
+  background: rgba(0, 0, 0, 0.96);
+  border-radius: 10%;
+  -webkit-animation: liquid 10s forwards;
+          animation: liquid 10s forwards; }
+
+.blobs {
+  -webkit-filter: url("#goo");
+          filter: url("#goo");
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .blobs .blob {
+    width: 100px;
+    height: 100px;
+    margin: 0px 100px 0px 0;
+    background: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    -webkit-animation: drip_one 10s forwards;
+            animation: drip_one 10s forwards; }
+    .blobs .blob:nth-child(1) {
+      left: -14%; }
+    .blobs .blob:nth-child(2) {
+      left: -1%; }
+    .blobs .blob:nth-child(3) {
+      left: 12%; }
+    .blobs .blob:nth-child(4) {
+      left: 25%; }
+    .blobs .blob:nth-child(5) {
+      left: 38%; }
+    .blobs .blob:nth-child(6) {
+      left: 51%; }
+    .blobs .blob:nth-child(7) {
+      left: 64%; }
+    .blobs .blob:nth-child(8) {
+      left: 77%; }
+    .blobs .blob:nth-child(9) {
+      left: 90%; }
+    .blobs .blob:nth-of-type(4n-7) {
+      width: 130px;
+      -webkit-animation: drip_four 10s forwards;
+              animation: drip_four 10s forwards; }
+    .blobs .blob:nth-of-type(3n-2) {
+      width: 52px; }
+    .blobs .blob:nth-of-type(2) {
+      width: 44px; }
+    .blobs .blob:nth-of-type(8) {
+      -webkit-animation: drip_five 10s forwards;
+              animation: drip_five 10s forwards; }
+    .blobs .blob:nth-of-type(4n+2) {
+      height: 112px;
+      -webkit-animation: drip_two 10s forwards;
+              animation: drip_two 10s forwards; }
+    .blobs .blob:nth-of-type(6n-2) {
+      height: 84px;
+      -webkit-animation: drip_three 10s forwards;
+              animation: drip_three 10s forwards; }
+
+@-webkit-keyframes drip_one {
+  from {
+    top: 0; }
+  to {
+    top: 103%; } }
+
+@keyframes drip_one {
+  from {
+    top: 0; }
+  to {
+    top: 103%; } }
+
+@-webkit-keyframes drip_two {
+  from {
+    top: 0; }
+  to {
+    top: 104%; } }
+
+@keyframes drip_two {
+  from {
+    top: 0; }
+  to {
+    top: 104%; } }
+
+@-webkit-keyframes drip_three {
+  from {
+    top: 0;
+    height: 104px; }
+  to {
+    top: 102%;
+    height: 264px; } }
+
+@keyframes drip_three {
+  from {
+    top: 0;
+    height: 104px; }
+  to {
+    top: 102%;
+    height: 264px; } }
+
+@-webkit-keyframes drip_four {
+  from {
+    top: 0;
+    width: 130px;
+    height: 60px; }
+  to {
+    top: 102%;
+    width: 150px;
+    height: 90px; } }
+
+@keyframes drip_four {
+  from {
+    top: 0;
+    width: 130px;
+    height: 60px; }
+  to {
+    top: 102%;
+    width: 150px;
+    height: 90px; } }
+
+@-webkit-keyframes drip_five {
+  from {
+    top: 0;
+    height: 60px; }
+  to {
+    top: 102%;
+    height: 144px; } }
+
+@keyframes drip_five {
+  from {
+    top: 0;
+    height: 60px; }
+  to {
+    top: 102%;
+    height: 144px; } }
+
+@-webkit-keyframes liquid {
+  from {
+    height: 30px; }
+  to {
+    height: 109%; } }
+
+@keyframes liquid {
+  from {
+    height: 30px; }
+  to {
+    height: 109%; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

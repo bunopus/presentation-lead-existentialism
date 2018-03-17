@@ -108,6 +108,7 @@
 						<div class="advice">
 							<div><h3>Быть тимлидом круто<span class="fragment">?</span></h3></div>
 						</div>
+						<span class="fragment" data-drippings></span>
 					</section>
 				</section>
 
@@ -132,6 +133,33 @@
 
 		<img id="spagetti-monster" src="img/spagetti_monster.png" style="z-index: 100;">
 		<img id="spagetti-highlight" src="img/spagetti_monster_highlight.png" style="z-index: 99; animation-delay: 500ms;">
+
+		<!--Drippings was taken from https://codepen.io/pareshd/pen/xgOEQb-->
+		<div id="drippings">
+			<div class="container">
+				<div class="blobs">
+					<div class="liquid"></div>
+					<div class="blob"></div>
+					<div class="blob"></div>
+					<div class="blob"></div>
+					<div class="blob"></div>
+					<div class="blob"></div>
+					<div class="blob"></div>
+					<div class="blob"></div>
+					<div class="blob"></div>
+				</div>
+				<h1 class="text">НЕТ</h1>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blur" />
+						<feColorMatrix in="blur" mode="matrix" values="1 0 10 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo"/>
+					</filter>
+				</defs>
+			</svg>
+		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
@@ -171,6 +199,17 @@
                     'slidechanged': function () {
                         cleanupEffects();
                     }
+                },
+                'data-drippings': {
+                    'fragmentshown': function () {
+                        $("#drippings").show();
+                    },
+                    'fragmenthidden': function () {
+                        cleanupEffects();
+                    },
+                    'slidechanged': function () {
+                        cleanupEffects();
+                    }
                 }
             }
         });
@@ -178,6 +217,8 @@
             $("#spagetti-monster").hide();
             $("#spagetti-highlight").hide();
             $("#evolution-business").removeAttr('style');
+            $("#drippings").hide();
+
         }
         Reveal.addEventListener('slidechanged', function () {
             cleanupEffects();
