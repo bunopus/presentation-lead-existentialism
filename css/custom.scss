@@ -114,6 +114,10 @@
       }
     }
   }
+
+  div.slide-background.present[data-background-hash="img/fire.gifnullnullnullnullnullnullnullnone"] {
+    opacity: 0.4;
+  }
 }
 @-webkit-keyframes blur {
   to {
@@ -132,6 +136,14 @@
   right: 0;
   height: 900px;
   animation-duration: 2s
+}
+
+#kunnamon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 600px;
+  display: none;
 }
 
 //<editor-fold desc="Drippings">

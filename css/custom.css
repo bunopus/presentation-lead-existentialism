@@ -97,6 +97,9 @@
       padding: 30px 0 0 0;
       margin: 0; }
 
+.reveal div.slide-background.present[data-background-hash="img/fire.gifnullnullnullnullnullnullnullnone"] {
+  opacity: 0.4; }
+
 @-webkit-keyframes blur {
   to {
     -webkit-filter: blur(5px);
@@ -113,6 +116,13 @@
   height: 900px;
   -webkit-animation-duration: 2s;
           animation-duration: 2s; }
+
+#kunnamon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 600px;
+  display: none; }
 
 #drippings {
   display: none;

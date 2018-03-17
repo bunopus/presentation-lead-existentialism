@@ -104,18 +104,24 @@
 					<section data-background="img/bg-flower.png">
 						<h2>Win <span class="fallback-font">—</span> Win</h2>
 					</section>
-					<section>
+					<section data-background="img/tail.png" data-background-size="contain" ></section>
+					<section><h3><span class="fallback-font" style="vertical-align: super; padding-right: 8px">“</span>Чтобы всё было хорошо<span class="fallback-font" style="vertical-align: super">”</span></h3></section>
+					<section data-background-transition="none" data-transition="none">
 						<div class="advice">
 							<div><h3>Быть тимлидом круто<span class="fragment">?</span></h3></div>
 						</div>
 						<span class="fragment" data-drippings></span>
 					</section>
 				</section>
-
+				<section data-background="img/fire.gif" data-black-bg data-kunammon data-background-transition="none" data-transition="none">
+					<h1 style="color: white; font-size: 3.5em">АДЪ</h1>
+					<span class="fragment" data-kunammon></span>
+				</section>
 
 				<section>
 					<a href='https://www.freepik.com/free-vector/collection-of-vintage-ornamental-ribbons_1045262.htm'>Designed by Freepik</a>
 					<a href='https://www.freepik.com/free-vector/set-of-hand-drawn-arrows_892779.htm'>Designed by Freepik</a>
+					<a href='https://www.freepik.com/free-vector/hand-drawn-bubbles-speech_764271.htm'>Designed by Freepik</a>
 					http://www.fontspace.com/sharkshock/papaya-sunrise
 				</section>
 
@@ -161,6 +167,8 @@
 			</svg>
 		</div>
 
+		<img id="kunnamon" src="img/kunammon.png">
+
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
@@ -195,9 +203,6 @@
                     },
                     'fragmenthidden': function () {
                         cleanupEffects();
-                    },
-                    'slidechanged': function () {
-                        cleanupEffects();
                     }
                 },
                 'data-drippings': {
@@ -206,11 +211,23 @@
                     },
                     'fragmenthidden': function () {
                         cleanupEffects();
+                    }
+                },
+								'data-black-bg': {
+                    'slidechanged': function (slide) {
+                        if(slide.currentSlide.hasAttribute('data-black-bg')) {
+                            $('body').css('background-color', 'black');
+                        }
+                    }
+                },
+                'data-kunammon': {
+                    'fragmentshown': function () {
+                        $("#kunnamon").show().addClass('animated bounceInUp');
                     },
-                    'slidechanged': function () {
+                    'fragmenthidden': function () {
                         cleanupEffects();
                     }
-                }
+                },
             }
         });
         function cleanupEffects() {
@@ -218,8 +235,11 @@
             $("#spagetti-highlight").hide();
             $("#evolution-business").removeAttr('style');
             $("#drippings").hide();
+            $('body').css('background-color', 'white');
+            $("#kunnamon").hide();
 
         }
+
         Reveal.addEventListener('slidechanged', function () {
             cleanupEffects();
         });
