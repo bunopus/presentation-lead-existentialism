@@ -100,6 +100,10 @@
 .reveal div.slide-background.present[data-background-hash="img/fire.gifnullnullnullnullnullnullnullnone"] {
   opacity: 0.4; }
 
+.reveal div.slide-background.present[data-background-hash="0whitenullnullnull"] {
+  -webkit-animation: fadein 5s;
+          animation: fadein 5s; }
+
 @-webkit-keyframes blur {
   to {
     -webkit-filter: blur(5px);
