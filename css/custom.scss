@@ -122,6 +122,18 @@
   div.slide-background.present[data-background-hash="0whitenullnullnull"] {
     animation: fadein 5s;
   }
+
+  .fragments-inplace {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  img.peter {
+    height: 600px;
+  }
 }
 @-webkit-keyframes blur {
   to {

@@ -104,6 +104,16 @@
   -webkit-animation: fadein 5s;
           animation: fadein 5s; }
 
+.reveal .fragments-inplace {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; }
+
+.reveal img.peter {
+  height: 600px; }
+
 @-webkit-keyframes blur {
   to {
     -webkit-filter: blur(5px);
