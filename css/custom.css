@@ -156,7 +156,8 @@
   bottom: 0;
   right: 0;
   height: 400px;
-  z-index: 102; }
+  z-index: 102;
+  display: none; }
 
 #drippings {
   display: none;
