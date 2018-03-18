@@ -122,6 +122,12 @@
   div.slide-background.present[data-background-hash="0whitenullnullnull"] {
     animation: fadein 5s;
   }
+  div.slide-background.present[data-background-hash="img/bg-way.pngcontainnullnullnullwhitenullnullnull"] {
+    animation: fadein-opaque 4s forwards;
+  }
+  div.slide-background.present[data-background-hash="img/bg-way.pngcontainnullnullnullnullnullnullnone"] {
+    opacity: 0.2;
+  }
 
   .fragments-inplace {
     position: absolute;
@@ -133,6 +139,11 @@
 
   img.peter {
     height: 600px;
+  }
+
+  img.ikigai-circle {
+    height: 600px;
+
   }
 }
 @-webkit-keyframes blur {
@@ -160,6 +171,13 @@
   left: 0;
   height: 600px;
   display: none;
+}
+#ikigai {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height: 400px;
+  z-index: 102;
 }
 
 //<editor-fold desc="Drippings">
@@ -284,3 +302,8 @@ $drippings-delay: 10s;
   to   { opacity: 1; }
 }
 //</editor-fold>
+
+@keyframes fadein-opaque {
+  from { opacity: 1; }
+  to   { opacity: 0.2; }
+}

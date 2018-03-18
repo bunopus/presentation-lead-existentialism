@@ -104,6 +104,13 @@
   -webkit-animation: fadein 5s;
           animation: fadein 5s; }
 
+.reveal div.slide-background.present[data-background-hash="img/bg-way.pngcontainnullnullnullwhitenullnullnull"] {
+  -webkit-animation: fadein-opaque 4s forwards;
+          animation: fadein-opaque 4s forwards; }
+
+.reveal div.slide-background.present[data-background-hash="img/bg-way.pngcontainnullnullnullnullnullnullnone"] {
+  opacity: 0.2; }
+
 .reveal .fragments-inplace {
   position: absolute;
   margin-left: auto;
@@ -112,6 +119,9 @@
   right: 0; }
 
 .reveal img.peter {
+  height: 600px; }
+
+.reveal img.ikigai-circle {
   height: 600px; }
 
 @-webkit-keyframes blur {
@@ -137,6 +147,16 @@
   left: 0;
   height: 600px;
   display: none; }
+
+#ikigai {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 400px;
+  z-index: 102; }
 
 #drippings {
   display: none;
@@ -332,3 +352,15 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+
+@-webkit-keyframes fadein-opaque {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.2; } }
+
+@keyframes fadein-opaque {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.2; } }

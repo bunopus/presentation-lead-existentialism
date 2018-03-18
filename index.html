@@ -175,11 +175,74 @@
 					</div>
 					<img src="img/teamlead-brain.png">
 				</section>
+				<section class="stretch">
+					<div class="section-head" style="padding-bottom: 50px"><h4>Два принципиальных отличия</h4>
+						<p>тимлида</p></div>
+					<ul style="padding-bottom: 100px; margin: 0">
+						<li class="fragment">расфокусировка</li>
+						<li class="fragment">люди</li>
+					</ul>
+				</section>
+				<section>
+					<div class="advice">
+						<div><h3>Не надо делать из хороших программистов плохих менеджеров</h3></div>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h2>Расфокусировка</h2>
+						<img src="img/chapter/2.png" height="300">
+					</section>
+					<section>рассказать про митинги таймменеджмент и пр</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Люди</h2>
+						<img src="img/chapter/3.png" height="300">
+					</section>
+					<section>как растить людей</section>
+				</section>
+
+				<section>
+					<section>
+						<img src="img/ikigai/ikigai.png" height="400px">
+					</section>
+					<section>
+						<div style="position:relative;">
+							<div class="fragment fragments-inplace">
+								<img src="img/ikigai/1.png" class="ikigai-circle">
+							</div>
+							<div class="fragment fragments-inplace">
+								<img src="img/ikigai/2.png" class="ikigai-circle">
+							</div>
+							<div class="fragment fragments-inplace">
+								<img src="img/ikigai/3.png" class="ikigai-circle">
+							</div>
+							<div class="fragment fragments-inplace">
+								<img src="img/ikigai/4.png" class="ikigai-circle">
+							</div>
+						</div>
+						<span class="fragment" data-ikigai></span>
+					</section>
+				</section>
+
+
+				<section data-background="img/bg-way.png" data-background-size="contain"></section>
+				<section data-background="img/bg-way.png" data-background-size="contain" data-background-color="white">
+					<h1 data-animate="fadeIn" data-duration="2" data-delay="2">спасибо</h1>
+				</section>
+				<section data-background="img/bg-way.png" data-background-size="contain" data-transition="none" data-background-transition="none">
+					твиттер и прочее
+				</section>
 				<section>
 					<a href='https://www.freepik.com/free-vector/collection-of-vintage-ornamental-ribbons_1045262.htm'>Designed by Freepik</a>
 					<a href='https://www.freepik.com/free-vector/set-of-hand-drawn-arrows_892779.htm'>Designed by Freepik</a>
 					<a href='https://www.freepik.com/free-vector/hand-drawn-bubbles-speech_764271.htm'>Designed by Freepik</a>
 					<a href='https://www.freepik.com/free-vector/hand-drawn-brain-hemispheres_796796.htm'>Designed by Freepik</a>
+					<a href='https://www.freepik.com/free-vector/japanese-flag-in-watercolor-style_766474.htm'>Designed by Freepik</a>
+					<a href='https://www.freepik.com/free-vector/pen-hatch-round-grunge-textures_1209713.htm'>Designed by Freepik</a>
+					Vector illustration credit: <a href="https://www.vecteezy.com">Vecteezy!</a>
 					http://www.fontspace.com/sharkshock/papaya-sunrise
 				</section>
 
@@ -226,6 +289,8 @@
 		</div>
 
 		<img id="kunnamon" src="img/kunammon.png">
+
+		<img id="ikigai" src="img/ikigai/ikigai.png">
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
@@ -286,6 +351,14 @@
                         cleanupEffects();
                     }
                 },
+                'data-ikigai': {
+                    'fragmentshown': function () {
+                        $("#ikigai").show().addClass('animated zoomIn');
+                    },
+                    'fragmenthidden': function () {
+                        cleanupEffects();
+                    }
+                },
             }
         });
         function cleanupEffects() {
@@ -295,6 +368,7 @@
             $("#drippings").hide();
             $('body').css('background-color', 'white');
             $("#kunnamon").hide();
+            $("#ikigai").hide();
 
         }
 
