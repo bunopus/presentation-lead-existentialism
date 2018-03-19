@@ -100,9 +100,10 @@
 .reveal div.slide-background.present[data-background-hash="img/fire.gifnullnullnullnullnullnullnullnone"] {
   opacity: 0.4; }
 
-.reveal div.slide-background.present[data-background-hash="0whitenullnullnull"] {
-  -webkit-animation: fadein 5s;
-          animation: fadein 5s; }
+.reveal div.slide-background.present[data-background-hash="0whitenullnullnone"] {
+  opacity: 0;
+  -webkit-animation: fadein 5s forwards;
+          animation: fadein 5s forwards; }
 
 .reveal div.slide-background.present[data-background-hash="img/bg-way.pngcontainnullnullnullwhitenullnullnull"] {
   -webkit-animation: fadein-opaque 4s forwards;
@@ -164,7 +165,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 1000; }
+  z-index: 10000; }
 
 .container {
   width: 100vw;

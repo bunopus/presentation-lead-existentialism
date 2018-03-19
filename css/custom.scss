@@ -119,8 +119,9 @@
     opacity: 0.4;
   }
 
-  div.slide-background.present[data-background-hash="0whitenullnullnull"] {
-    animation: fadein 5s;
+  div.slide-background.present[data-background-hash="0whitenullnullnone"] {
+    opacity: 0;
+    animation: fadein 5s forwards;
   }
   div.slide-background.present[data-background-hash="img/bg-way.pngcontainnullnullnullwhitenullnullnull"] {
     animation: fadein-opaque 4s forwards;
@@ -190,7 +191,7 @@ $drippings-delay: 10s;
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 1000;
+  z-index: 10000;
 }
 @mixin leftPos($count){
   @for $i from 1 through $count {
