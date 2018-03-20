@@ -146,6 +146,32 @@
     height: 600px;
 
   }
+
+  section {
+    .clock-container.fragment {
+      position: relative;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      visibility: visible;
+
+      &.current-fragment {
+        img.shake-clock {
+          animation-iteration-count: infinite;
+          animation-duration: 700ms;
+          animation-name: shake;
+        }
+      }
+
+      div {
+        position: absolute;
+        animation: fadein 700ms forwards;
+        opacity: 0;
+      }
+    }
+  }
 }
 @-webkit-keyframes blur {
   to {
