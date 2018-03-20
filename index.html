@@ -233,8 +233,12 @@
 						<h3 style="padding-top: 100px">Технический бекграунд</h3>
 						<img src="img/mech-brain.png" style="height: 700px">
 					</section>
-
-					<section>рассказать про митинги таймменеджмент и пр</section>
+					<section data-swing-sign><img src="img/vahter.png" style="width: 500px" data-duration="5" id="swing-sign"> </section>
+					<section>
+						<div class="advice">
+							<div><h3>Заведите себе асинхронный входящий канал связи</h3></div>
+						</div>
+					</section>
 				</section>
 
 				<section>
@@ -289,6 +293,7 @@
 					<a href='https://www.freepik.com/free-vector/clock-icons-set_1536566.htm'>Designed by Freepik</a>
 					<a href='https://www.freepik.com/free-vector/sketchy-furniture-pattern_821699.htm'>Designed by Freepik</a>
 					<a href='https://www.freepik.com/free-vector/mechanical-brain_769574.htm'>Designed by Freepik</a>
+					<a href="https://www.freepik.com/free-vector/collection-of-hand-drawn-wooden-sign_1253753.htm">Designed by Freepik</a>
 					Vector illustration credit: <a href="https://www.vecteezy.com">Vecteezy!</a>
 					http://www.fontspace.com/sharkshock/papaya-sunrise
 				</section>
@@ -406,6 +411,11 @@
                         cleanupEffects();
                     }
                 },
+                'data-swing-sign': {
+                    'slidechanged': function (slide) {
+                        $("#swing-sign", slide.currentSlide).addClass('animated swing');
+                    }
+                },
             }
         });
         function cleanupEffects() {
@@ -416,6 +426,7 @@
             $('body').css('background-color', 'white');
             $("#kunnamon").hide();
             $("#ikigai").hide();
+            $("#swing-sign").removeClass('animated swing');
 
         }
 
