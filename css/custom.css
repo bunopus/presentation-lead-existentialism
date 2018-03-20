@@ -125,6 +125,9 @@
 .reveal img.ikigai-circle {
   height: 600px; }
 
+.reveal img.brain-info {
+  height: 500px; }
+
 .reveal section .clock-container.fragment {
   position: relative;
   height: 500px;
