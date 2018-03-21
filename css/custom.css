@@ -193,6 +193,17 @@
   height: 600px;
   display: none; }
 
+#dorofeev {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0; }
+  #dorofeev.show {
+    -webkit-animation: run 5s forwards;
+            animation: run 5s forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
+
 #ikigai {
   margin: auto;
   position: absolute;
@@ -410,3 +421,19 @@
     opacity: 1; }
   to {
     opacity: 0.2; } }
+
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  50% {
+    left: 45%;
+    opacity: 1; }
+  70% {
+    left: 100%;
+    opacity: 1; }
+  100% {
+    left: 100%;
+    opacity: 0; } }

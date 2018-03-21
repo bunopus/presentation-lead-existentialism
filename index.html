@@ -194,32 +194,33 @@
 						<img src="img/chapter/2.png" height="300">
 					</section>
 					<section>
-					<div class="clock-container fragment">
-						<div class="fragment shakeable">
-							<div style="top:80px;left: 100px; animation-delay: 500ms;" class="clock-entry">
-								<img src="img/clocks/1.png" class="shake-clock" style="height:110px; animation-delay: 100ms">
+						<div class="clock-container fragment">
+							<div class="fragment shakeable">
+								<div style="top:80px;left: 100px; animation-delay: 500ms;" class="clock-entry">
+									<img src="img/clocks/1.png" class="shake-clock" style="height:110px; animation-delay: 100ms">
+								</div>
+								<div style="top:30px;left: 400px; animation-delay: 1100ms;" class="clock-entry">
+									<img src="img/clocks/2.png" class="shake-clock" style="height:115px;animation-delay: 200ms">
+								</div>
+								<div style="top:90px;left: 750px; animation-delay: 1500ms;" class="clock-entry">
+									<img src="img/clocks/3.png" class="shake-clock" style="height:83px;animation-delay: 150ms">
+								</div>
+								<div style="top:240px;left: 80px; animation-delay: 1900ms;" class="clock-entry">
+									<img src="img/clocks/4.png" class="shake-clock" style="height:95px;animation-delay: 300ms;">
+								</div>
+								<div style="top:290px;left: 490px; animation-delay: 1900ms;" class="clock-entry">
+									<img src="img/clocks/5.png" class="shake-clock" style="height:120px;animation-delay: 320ms">
+								</div>
+								<div style="top:200px;left: 800px; animation-delay: 2700ms;" class="clock-entry">
+									<img src="img/clocks/2.png" class="shake-clock" style="height:120px;animation-delay: 270ms">
+								</div>
+								<div style="top:330px;left: 300px; animation-delay: 2900ms;" class="clock-entry">
+									<img src="img/clocks/1.png" class="shake-clock" style="height:96px;animation-delay: 210ms">
+								</div>
+								<div style="top:415px;left: 600px; animation-delay: 2900ms;" class="clock-entry">
+									<img src="img/clocks/3.png" class="shake-clock" style="height:90px;animation-delay: 280ms">
+								</div>
 							</div>
-							<div style="top:30px;left: 400px; animation-delay: 1100ms;" class="clock-entry">
-								<img src="img/clocks/2.png" class="shake-clock" style="height:115px;animation-delay: 200ms">
-							</div>
-							<div style="top:90px;left: 750px; animation-delay: 1500ms;" class="clock-entry">
-								<img src="img/clocks/3.png" class="shake-clock" style="height:83px;animation-delay: 150ms">
-							</div>
-							<div style="top:240px;left: 80px; animation-delay: 1900ms;" class="clock-entry">
-								<img src="img/clocks/4.png" class="shake-clock" style="height:95px;animation-delay: 300ms;">
-							</div>
-							<div style="top:290px;left: 490px; animation-delay: 1900ms;" class="clock-entry">
-								<img src="img/clocks/5.png" class="shake-clock" style="height:120px;animation-delay: 320ms">
-							</div>
-							<div style="top:200px;left: 800px; animation-delay: 2700ms;" class="clock-entry">
-								<img src="img/clocks/2.png" class="shake-clock" style="height:120px;animation-delay: 270ms">
-							</div>
-							<div style="top:330px;left: 300px; animation-delay: 2900ms;" class="clock-entry">
-								<img src="img/clocks/1.png" class="shake-clock" style="height:96px;animation-delay: 210ms">
-							</div>
-							<div style="top:415px;left: 600px; animation-delay: 2900ms;" class="clock-entry">
-								<img src="img/clocks/3.png" class="shake-clock" style="height:90px;animation-delay: 280ms">
-							</div></div>
 							<h3>У меня нет времени</h3>
 						</div>
 					</section>
@@ -273,6 +274,11 @@
 					<section>
 						<div class="advice">
 							<div><h3>Заведите себе блокнот</h3></div>
+						</div>
+					</section>
+					<section data-dorofeev>
+						<div class="advice">
+							<div><h3>Почитайте уже Дорофеева</h3></div>
 						</div>
 					</section>
 				</section>
@@ -441,6 +447,8 @@
 
 		<img id="kunnamon" src="img/kunammon.png">
 
+		<img id="dorofeev" src="img/dorofeev.png">
+
 		<img id="ikigai" src="img/ikigai/ikigai.png">
 
 		<script src="lib/js/head.min.js"></script>
@@ -514,6 +522,11 @@
                 'data-swing-sign': {
                     'slidechanged': function (slide) {
                         $("#swing-sign", slide.currentSlide).addClass('animated swing');
+                    }
+                },
+                'data-dorofeev': {
+                    'slidechanged': function () {
+                        $("#dorofeev").addClass('show');
                     }
                 }
             },
