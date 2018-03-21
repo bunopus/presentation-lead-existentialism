@@ -150,17 +150,23 @@
           justify-content: center;
   opacity: 1;
   visibility: visible; }
-  .reveal section .clock-container.fragment.current-fragment img.shake-clock {
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-duration: 700ms;
-            animation-duration: 700ms;
-    -webkit-animation-name: shake;
-            animation-name: shake; }
-  .reveal section .clock-container.fragment div {
-    position: absolute;
+  .reveal section .clock-container.fragment.current-fragment .clock-entry {
     -webkit-animation: fadein 700ms forwards;
-            animation: fadein 700ms forwards;
+            animation: fadein 700ms forwards; }
+  .reveal section .clock-container.fragment .shakeable.fragment {
+    opacity: 1;
+    visibility: visible; }
+    .reveal section .clock-container.fragment .shakeable.fragment.current-fragment img.shake-clock {
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-duration: 700ms;
+              animation-duration: 700ms;
+      -webkit-animation-name: shake;
+              animation-name: shake; }
+    .reveal section .clock-container.fragment .shakeable.fragment.current-fragment .clock-entry {
+      opacity: 1; }
+  .reveal section .clock-container.fragment .clock-entry {
+    position: absolute;
     opacity: 0; }
 
 @-webkit-keyframes blur {

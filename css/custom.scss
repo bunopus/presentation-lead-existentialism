@@ -170,16 +170,31 @@
       visibility: visible;
 
       &.current-fragment {
-        img.shake-clock {
-          animation-iteration-count: infinite;
-          animation-duration: 700ms;
-          animation-name: shake;
+
+        .clock-entry {
+          animation: fadein 700ms forwards;
         }
       }
 
-      div {
+      .shakeable.fragment {
+        opacity: 1;
+        visibility: visible;
+
+        &.current-fragment {
+          img.shake-clock {
+            animation-iteration-count: infinite;
+            animation-duration: 700ms;
+            animation-name: shake;
+          }
+
+          .clock-entry {
+            opacity: 1;
+          }
+        }
+      }
+
+      .clock-entry {
         position: absolute;
-        animation: fadein 700ms forwards;
         opacity: 0;
       }
     }
