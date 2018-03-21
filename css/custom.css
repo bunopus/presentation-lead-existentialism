@@ -5,6 +5,9 @@
   background: rgba(0, 0, 0, 0.2);
   color: #5a4a42; }
 
+.reveal .alt-color {
+  color: #CE495A; }
+
 .reveal section img {
   border: none;
   background: none;
@@ -111,6 +114,11 @@
 
 .reveal div.slide-background.present[data-background-hash="img/bg-way.pngcontainnullnullnullnullnullnullnone"] {
   opacity: 0.2; }
+
+.reveal div.slide-background.present[data-background-hash="img/atomic.jpgnullnullnullnullnullnullnullnull"] {
+  opacity: 0;
+  -webkit-animation: fadein 4s forwards;
+          animation: fadein 4s forwards; }
 
 .reveal .fragments-inplace {
   position: absolute;

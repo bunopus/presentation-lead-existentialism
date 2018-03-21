@@ -10,6 +10,9 @@
     color: #5a4a42;
   }
 
+  .alt-color {
+    color: $secondColor;
+  }
   section {
     img {
       border: none;
@@ -130,6 +133,10 @@
   }
   div.slide-background.present[data-background-hash="img/bg-way.pngcontainnullnullnullnullnullnullnone"] {
     opacity: 0.2;
+  }
+  div.slide-background.present[data-background-hash="img/atomic.jpgnullnullnullnullnullnullnullnull"] {
+    opacity: 0;
+    animation: fadein 4s forwards;
   }
 
   .fragments-inplace {
