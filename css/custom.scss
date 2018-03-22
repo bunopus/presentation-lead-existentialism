@@ -210,6 +210,34 @@
       }
     }
   }
+
+  img.avatar {
+    width: 300px;
+  }
+
+  .rpg-card {
+    overflow: auto
+  }
+
+  .avatar-container {
+    float: left;
+
+    .avatar {
+      padding-right: 40px;
+      display: block;
+    }
+  }
+
+  .rpg-content {
+    margin-left: 300px;
+    margin-top: 30px;
+    text-align: left;
+    line-height: 1.6em;
+    ul {
+      display: block;
+    }
+  }
+
 }
 @-webkit-keyframes blur {
   to {

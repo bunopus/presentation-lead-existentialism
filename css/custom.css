@@ -175,6 +175,26 @@
   .reveal section .fragment.highlight-current.current-fragment, .reveal section .fragment.highlight-current.visible.current-fragment {
     opacity: 1; }
 
+.reveal img.avatar {
+  width: 300px; }
+
+.reveal .rpg-card {
+  overflow: auto; }
+
+.reveal .avatar-container {
+  float: left; }
+  .reveal .avatar-container .avatar {
+    padding-right: 40px;
+    display: block; }
+
+.reveal .rpg-content {
+  margin-left: 300px;
+  margin-top: 30px;
+  text-align: left;
+  line-height: 1.6em; }
+  .reveal .rpg-content ul {
+    display: block; }
+
 @-webkit-keyframes blur {
   to {
     -webkit-filter: blur(5px);
