@@ -199,6 +199,17 @@
       }
     }
   }
+
+  section {
+    .fragment.highlight-current, .fragment.highlight-current.visible {
+      visibility: visible;
+      opacity: 0.3;
+
+      &.current-fragment {
+        opacity: 1;
+      }
+    }
+  }
 }
 @-webkit-keyframes blur {
   to {
