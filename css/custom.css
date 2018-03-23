@@ -194,6 +194,8 @@
   line-height: 1.6em; }
   .reveal .rpg-content ul {
     display: block; }
+  .reveal .rpg-content .rpg-bar {
+    width: 500px; }
 
 @-webkit-keyframes blur {
   to {
