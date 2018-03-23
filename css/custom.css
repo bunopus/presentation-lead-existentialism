@@ -197,14 +197,6 @@
   .reveal .rpg-content .rpg-bar {
     width: 500px; }
 
-.reveal .info .doge {
-  font-family: fantasy;
-  font-size: 1.6em;
-  padding-right: 6px;
-  vertical-align: baseline; }
-  .reveal .info .doge::after {
-    content: "@"; }
-
 .reveal .info .twitter {
   padding-bottom: 150px; }
   .reveal .info .twitter img {
@@ -272,6 +264,7 @@
   display: none; }
 
 #credits {
+  display: none;
   position: absolute;
   bottom: 10px;
   width: 100%;

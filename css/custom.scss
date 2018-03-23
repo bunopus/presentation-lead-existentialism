@@ -245,16 +245,6 @@
 
   .info {
 
-    .doge {
-      font-family: fantasy;
-      font-size: 1.6em;
-      padding-right: 6px;
-      vertical-align: baseline;
-
-      &::after {
-        content: "@";
-      }
-    }
     .twitter {
       img {
         width: 60px;
@@ -330,6 +320,7 @@
 }
 
 #credits {
+  display: none;
   position: absolute;
   bottom: 10px;
   width: 100%;
