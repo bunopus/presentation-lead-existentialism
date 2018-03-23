@@ -197,6 +197,34 @@
   .reveal .rpg-content .rpg-bar {
     width: 500px; }
 
+.reveal .info .doge {
+  font-family: fantasy;
+  font-size: 1.6em;
+  padding-right: 6px;
+  vertical-align: baseline; }
+  .reveal .info .doge::after {
+    content: "@"; }
+
+.reveal .info .twitter {
+  padding-bottom: 150px; }
+  .reveal .info .twitter img {
+    width: 60px;
+    padding-right: 10px;
+    opacity: 0.9; }
+
+.reveal .info img.small-logo {
+  width: 50px;
+  margin: 0;
+  vertical-align: middle;
+  border-radius: 0;
+  padding-right: 5px; }
+
+.reveal .info .team-text {
+  padding-top: 20px; }
+
+.reveal .info a {
+  color: #5a4a42; }
+
 @-webkit-keyframes blur {
   to {
     -webkit-filter: blur(5px);
@@ -242,6 +270,14 @@
   height: 400px;
   z-index: 102;
   display: none; }
+
+#credits {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center; }
+  #credits, #credits a, #credits a:visited, #credits a:hover {
+    color: rgba(0, 0, 0, 0.56); }
 
 #drippings {
   display: none;
