@@ -559,8 +559,8 @@
 			</div>
 		</div>
 
-		<img id="spagetti-monster" src="img/spagetti_monster.png" style="z-index: 1000;">
-		<img id="spagetti-highlight" src="img/spagetti_monster_highlight.png" style="z-index: 999; animation-delay: 1.5s; animation-duration: 1s">
+		<img id="spagetti-monster" src="img/spagetti_monster.png" style="z-index: 1000; animation-delay: 1s;">
+		<img id="spagetti-highlight" src="img/spagetti_monster_highlight.png" style="z-index: 999; animation-delay: 2s; animation-duration: 2s">
 
 		<!--Drippings was taken from https://codepen.io/pareshd/pen/xgOEQb-->
 		<div id="drippings">
@@ -630,7 +630,7 @@
                     'fragmentshown': function () {
                         $("#spagetti-monster").show().addClass('animated zoomIn');
                         $("#spagetti-highlight").show().addClass('animated zoomIn');
-                        $("#evolution-business").css('-webkit-animation', 'blur 2s linear forwards')
+                        $("#evolution-business").css('-webkit-animation', 'blur 1s linear forwards')
                     },
                     'fragmenthidden': function () {
                         cleanupEffects();
