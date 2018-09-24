@@ -114,16 +114,16 @@
 					<section><h3><span class="fallback-font" style="vertical-align: super; padding-right: 8px">“</span>Чтобы всё было хорошо<span class="fallback-font" style="vertical-align: super">”</span></h3></section>
 					<section data-background-transition="none" data-transition="none">
 						<div class="advice">
-							<div><h3>Быть тимлидом круто<span class="fragment">?</span></h3></div>
+							<div><h3>Быть тимлидом круто<span class="fragment" data-sarabanda-play>?</span></h3></div>
 						</div>
-						<span class="fragment" data-drippings><audio data-autoplay src="media/sarabanda.mp3"></audio></span>
+						<span class="fragment" data-drippings></span>
 					</section>
 				</section>
 				<section data-background="img/fire.gif" data-black-bg data-kunammon data-background-transition="none" data-transition="none">
 					<h1 style="color: white; font-size: 3.5em">АДЪ</h1>
 					<span class="fragment" data-kunammon></span>
 				</section>
-				<section  data-black-bg data-background-color="white" data-background-transition="none" data-transition="none"></section>
+				<section  data-black-bg data-background-color="white" data-background-transition="none" data-transition="none" data-sarabanda-stop></section>
 
 				<section>
 					<section>
@@ -598,6 +598,8 @@
 
 		</div>
 
+		<audio preload="auto" src="media/sarabanda.mp3" id="sarabanda"></audio>
+
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
@@ -680,9 +682,19 @@
                     'slidechanged': function () {
                         $("#credits").show();
                     }
+                },
+								'data-sarabanda-play': {
+                    'fragmentshown': function () {
+                        $("#sarabanda")[0].play();
+                    }
+                },
+                'data-sarabanda-stop': {
+                    'slidechanged': function () {
+                        $("#sarabanda")[0].pause();
+                    }
                 }
             },
-            otfFragmentOrder: true,
+            otfFragmentOrder: true
 
         });
         function cleanupEffects() {

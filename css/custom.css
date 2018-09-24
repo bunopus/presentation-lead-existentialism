@@ -297,8 +297,8 @@
   font-size: 8em;
   font-weight: 900;
   opacity: 0;
-  -webkit-animation: fadein 1.5s forwards;
-          animation: fadein 1.5s forwards;
+  -webkit-animation: fadein 4s forwards;
+          animation: fadein 4s forwards;
   -webkit-animation-delay: 7.5s;
           animation-delay: 7.5s; }
 
